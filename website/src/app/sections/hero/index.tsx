@@ -5,7 +5,7 @@ import * as Scrollytelling from "~/lib/scrollytelling-client";
 import s from "./hero.module.scss";
 import Link from "next/link";
 import { LogoBasement } from "../../logos/logo";
-// import { CanvasWithMacModel } from "./mac-model";
+import  {CanvasWithMacModel}  from "./mac-model";
 import { toVw } from "~/lib/utils";
 import { useMedia } from "~/hooks/use-media";
 
@@ -15,7 +15,6 @@ export const Hero = () => {
   return (
     <Scrollytelling.Root
       defaults={{ ease: "linear" }}
-      debug={{ label: "Hero" }}
     >
       <Scrollytelling.Pin
         childHeight={"100vh"}
@@ -145,7 +144,7 @@ export const Hero = () => {
 
         <section className={s["section"]}>
           <div className={s["model-container"]}>
-            {/* <CanvasWithMacModel /> */}
+            <CanvasWithMacModel />
           </div>
 
           <div className="wrapper">

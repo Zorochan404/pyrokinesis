@@ -1,4 +1,4 @@
-import * as Scrollytelling from "@bsmnt/scrollytelling";
+import * as Scrollytelling from "~/lib/scrollytelling-client";
 import React, { useMemo } from "react";
 import { Float, useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
