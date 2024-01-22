@@ -532,7 +532,7 @@ export const Visualizer = () => {
               </svg>
 
               <span className={s['text']}>
-                SCROLL TO ROOT 
+                SCROLL TO ROOT
               </span>
             </button>
           </div>
@@ -683,7 +683,7 @@ export const Visualizer = () => {
               <span className={s["version"]}> (v.{libPackage.version})</span>
             </span>
             <span>
-              made with 🖤 asfdasdf adfa sdfby{" "}
+              made with 🖤 by{" "}
               <a
                 href="https://basement.studio"
                 target="_blank"
