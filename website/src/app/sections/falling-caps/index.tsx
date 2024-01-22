@@ -27,7 +27,7 @@ const splitText = (text: string, wordClass?: string) => {
 
 
 
-const lines = ["A spellbinding narrative", "of enigmatic wonders", "AWAITS..."];
+const lines = ["A spellbinding ", " narrative of enigmatic wonders", "AWAITS..."];
 
 export const FallingCaps = () => {
   const splittedText = useMemo(
