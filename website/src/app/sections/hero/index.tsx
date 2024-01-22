@@ -5,7 +5,7 @@ import * as Scrollytelling from "~/lib/scrollytelling-client";
 import s from "./hero.module.scss";
 import Link from "next/link";
 import { LogoBasement } from "../../logos/logo";
-import { CanvasWithMacModel } from "./mac-model";
+import CanvasWithMacModel  from "./mac-model";
 import { toVw } from "~/lib/utils";
 import { useMedia } from "~/hooks/use-media";
 
@@ -23,7 +23,7 @@ export const Hero = () => {
         pinSpacerClassName={s["pin-spacer"]}
       >
         <header className={s["header"]}>
-          <Link title="basement scrollytelling" href="/">
+          <Link title="Pyrokinesis" href="/">
             <LogoBasement className={s["logo"]} />
           </Link>
 
@@ -109,7 +109,7 @@ export const Hero = () => {
           </svg>
           <div className={s["cta"]}>
             <pre>
-              <code>npm i @bsmnt/scrollytelling</code>
+              <code>To get the hottest grooving experience</code>
             </pre>
             <div className={s["cta--buttons"]}>
             <a
@@ -117,30 +117,11 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z"
-                  fill="currentColor"
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span>GitHub</span>
+              <span>Book Your Tickets Now</span>
             </a>
-            <a 
-            target="_blank"
-            rel="noopener noreferrer"
-            className={s["docs-link"]} href="/docs">
-              <span>b</span>
-              Docs</a>
+            
             </div>
-          </div>
+          </div> 
         </header>
 
         <section className={s["section"]}>
@@ -329,12 +310,8 @@ export const Hero = () => {
       
               <div className={s["footer"]}>
                 <p>
-                  We’re a boutique studio of ambitious creatives working at the
-                  edge of performant and immersive digital experiences, giving
-                  110% to bring projects from a realm of ideas to reality
-                  through branding, visual design & development of the highest
-                  quality.
-                </p>
+                Amidst asdfasdf the vibrant landscape of Assam Engineering College emerges Pyrokinesis. Pyrokinesis, the annual cultural extravaganza, paints the canvas of Assam with the strokes of enchantment and mystery. Enchanto Enigma, this year's ethereal theme, weaves a spellbinding narrative of enigmatic wonders. It beckons attendees into a realm where mystique intertwines with the allure of discovery. 
+                </p>  
                 <svg
                   viewBox="0 0 24 12"
                   fill="none"
@@ -346,14 +323,10 @@ export const Hero = () => {
                   />
                 </svg>
                 <p>
-                  We don&apos;t settle, we are intentional about building with
-                  surgical precision and creating extraordinary experiences. We
-                  go the extra mile, and then walk a couple more,
-                  <br /> just for fun.
+                From the captivating performances resonating with indigenous melodies to the kaleidoscope of cultural exhibitions unveiling Assam's rich heritage. It's a testament to the fusion of tradition and modernity, where the flames of creativity ignite hearts and minds, leaving an indelible mark on all who revel in its enchanting embrace.
                 </p>
                 <p>
-                  Sometimes size doesn&apos;t matter. we work for big & small
-                  non-stoppable visionaries. here&apos;s love for them all.
+                The festival's ambiance evokes curiosity, a quest to unravel the hidden, and a celebration of the unexplained.
                 </p>
               </div>
             </div>
