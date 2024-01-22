@@ -5,7 +5,7 @@ import * as Scrollytelling from "~/lib/scrollytelling-client";
 import s from "./hero.module.scss";
 import Link from "next/link";
 import { LogoBasement } from "../../logos/logo";
-import { CanvasWithMacModel } from "./mac-model";
+import CanvasWithMacModel  from "./mac-model";
 import { toVw } from "~/lib/utils";
 import { useMedia } from "~/hooks/use-media";
 
@@ -121,7 +121,7 @@ export const Hero = () => {
             </a>
             
             </div>
-          </div>
+          </div> 
         </header>
 
         <section className={s["section"]}>
@@ -368,12 +368,8 @@ export const Hero = () => {
               </div>
               <div className={s["footer"]}>
                 <p>
-                  We’re a boutique studio of ambitious creatives working at the
-                  edge of performant and immersive digital experiences, giving
-                  110% to bring projects from a realm of ideas to reality
-                  through branding, visual design & development of the highest
-                  quality.
-                </p>
+                Amidst asdfasdf the vibrant landscape of Assam Engineering College emerges Pyrokinesis. Pyrokinesis, the annual cultural extravaganza, paints the canvas of Assam with the strokes of enchantment and mystery. Enchanto Enigma, this year's ethereal theme, weaves a spellbinding narrative of enigmatic wonders. It beckons attendees into a realm where mystique intertwines with the allure of discovery. 
+                </p>  
                 <svg
                   viewBox="0 0 24 12"
                   fill="none"
@@ -385,14 +381,10 @@ export const Hero = () => {
                   />
                 </svg>
                 <p>
-                  We don&apos;t settle, we are intentional about building with
-                  surgical precision and creating extraordinary experiences. We
-                  go the extra mile, and then walk a couple more,
-                  <br /> just for fun.
+                From the captivating performances resonating with indigenous melodies to the kaleidoscope of cultural exhibitions unveiling Assam's rich heritage. It's a testament to the fusion of tradition and modernity, where the flames of creativity ignite hearts and minds, leaving an indelible mark on all who revel in its enchanting embrace.
                 </p>
                 <p>
-                  Sometimes size doesn&apos;t matter. we work for big & small
-                  non-stoppable visionaries. here&apos;s love for them all.
+                The festival's ambiance evokes curiosity, a quest to unravel the hidden, and a celebration of the unexplained.
                 </p>
               </div>
             </div>

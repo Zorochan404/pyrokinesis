@@ -3,7 +3,7 @@ import s from "./horizontal-marquee.module.scss";
 import { forwardRef } from "react";
 
 // const phrase = "OUR WOR IS SERIOUS WE ARE NOT";
-const phrase = "FROM THE LABORATORY...";
+const phrase = "A DIVE INTO THE MYSTIC REALM...";
 const splitted = phrase.split("");
 const charsLength = splitted.length;
 

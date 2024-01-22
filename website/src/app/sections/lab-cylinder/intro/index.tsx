@@ -33,7 +33,7 @@ export const LabIntro = () => {
                 fill="#EFEFEF"
               />
             </svg>
-            <span>the lab</span>
+            <span>Pyrokinesis</span>
           </div>
         </Scrollytelling.Parallax>
 
@@ -69,7 +69,7 @@ export const LabIntro = () => {
             movementY: { value: -40, unit: "px" },
           }}
         >
-          <h2 className={s.title}>A peek into the latest in tech</h2>
+          <h2 className={s.title}>Mystify. Explore. Evoke. </h2>
         </Scrollytelling.Parallax>
         <p className={s.subtitle}>
           <svg
@@ -141,7 +141,7 @@ const Marquee = ({
       >
         {Array.from({ length: 10 }, (_, i) => (
           <div key={i} className={s.marqueeItem}>
-            the lab <LabSvg />
+            Enchanto <LabSvg /> Enigma <LabSvg />
           </div>
         ))}
       </div>
