@@ -19,10 +19,5 @@ export default function Debugger() {
     w.__scrollytelling_alreadyMountedDebuggerInstance = true;
   }, []);
 
-  if (!mountInstance) return <></>;
-  return (
-    <Portal>
-      <Visualizer />
-    </Portal>
-  );
+   return <></>;
 }
