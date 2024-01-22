@@ -151,21 +151,21 @@
   .svg-we {
     top: 0;
     left: 0;
-
     width: tovw(543px);
     height: tovw(183px);
+    transform-origin: left bottom;
   }
 
   .svg-make {
     right: 0;
-    bottom: 0;
-    width: tovw(924px);
+    bottom: -33%;
+    width: tovw(900px);
     height: tovw(183px);
-    transform: translateX(-35%);
+    transform: translateX(-39%);
     transform-origin: center bottom;
 
     @media screen and (max-width: 800px) {
-      transform: translateX(-25%);
+      transform: translateX(-31%);
     }
   }
 
@@ -176,7 +176,7 @@
 
   .svg-performs {
     position: relative;
-    width: tovw(1118px);
+    width: tovw(415px);
     height: tovw(115px);
     transform: scaleY(1.016);
     transform-origin: left bottom;
@@ -184,10 +184,10 @@
 
   .svg-that {
     position: relative;
-    width: tovw(415px);
+    width: tovw(1118px);
     height: tovw(115px);
     margin-right: tovw(70px);
-    transform-origin: left center;
+    transform-origin: right bottom;
   }
 }
 
