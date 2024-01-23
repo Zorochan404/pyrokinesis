@@ -6,6 +6,7 @@ import s from "./hero.module.scss";
 import Link from "next/link";
 import { LogoBasement } from "../../logos/logo";
 import  {CanvasWithMacModel}  from "./mac-model";
+
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 import { toVw } from "~/lib/utils";
@@ -152,7 +153,9 @@ export const Hero = () => {
 
   return (
     <Scrollytelling.Root
+
       // defaults={{ ease: "linear" }}
+
     >
       <Scrollytelling.Pin
         childHeight={"100vh"}
