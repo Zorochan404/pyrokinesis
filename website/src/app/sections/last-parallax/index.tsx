@@ -46,7 +46,7 @@ export const LastParallax = () => {
             className={s["smile"]}
             src={SMILE_IMAGE}
             placeholder="blur"
-            id="smile-image"
+            id="smile-image"  
           />
           <Scrollytelling.Animation
             tween={{

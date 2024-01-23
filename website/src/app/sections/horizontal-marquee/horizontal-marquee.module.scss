@@ -40,3 +40,15 @@
   height: tovw(467px);
   margin-left: tovw(80px);
 }
+
+
+.responsiveImage{
+  width: 65%;
+}
+
+/* Media query for mobile view */
+@media (max-width: 800px) {
+  .responsiveImage {
+    width: 60%; /* Adjust the width for larger size on smaller screens */
+  }
+}
