@@ -16,8 +16,8 @@ type CyllinderProps = {
   experiments: Experiment[];
 };
 
-const itemHeight = "7vh";
-const itemsInViewAtOnce = 7;
+const itemHeight = "5vh";
+const itemsInViewAtOnce = 5;
 const itemsPadding = 4;
 
 export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
@@ -71,19 +71,22 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
             />
 
             {experiments.map((experiment, i) => {
-              const author = experiment.contributors[0];
+              // const author = experiment.contributors[0];
 
               return (
                 <div className={s["item"]} data-experiment={i} key={i}>
+                  {/* title is the name   */}
                   <h2 className={s["title"]}>{experiment.title}</h2>
                   <div className={s["info"]}>
-                    <Link
+                    {/* <Link
                       className={s["link"]}
                       href={"https://lab.basement.studio" + experiment.href}
                       target="_blank"
                       rel="noopener"
-                    >
-                      {experiment.og && (
+                    > */}
+
+
+                      {/* image src */}
                         <Image
                           draggable={false}
                           className={clsx("image", s["image"])}
@@ -93,17 +96,17 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
                           quality={100}
                           alt={"dummy image"}
                         />
-                      )}
-                    </Link>
 
-                    {author?.name && (
+ 
+
+                    {/* {author?.name && (
                       <p className={s["credits"]}>
                         <span>Made by</span>{" "}
                         <Link href={author.url} target="_blank" rel="noopener">
                           {author?.name}
                         </Link>
                       </p>
-                    )}
+                    )} */}
                   </div>
                 </div>
               );
