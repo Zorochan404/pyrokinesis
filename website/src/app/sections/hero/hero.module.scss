@@ -117,17 +117,14 @@
   z-index: 100;
   top: 50%;
   right: 0;
-  width: tovw(300px, "desktop-large", 500px);
-  height: tovw(300px, "desktop-large", 500px);
+  width: tovw(500px, "desktop-large", 200px);
+  height: tovw(500px, "desktop-large", 200px);
   transform: translateY(-50%);
 
   @media screen and (max-width: 800px) {
-    width: 300px;
-    height: 300px;
     top: 15%;
   }
 }
-
 
 .content {
   display: grid;
@@ -154,21 +151,21 @@
   .svg-we {
     top: 0;
     left: 0;
+
     width: tovw(543px);
     height: tovw(183px);
-    transform-origin: left bottom;
   }
 
   .svg-make {
     right: 0;
-    bottom: -33%;
-    width: tovw(900px);
+    bottom: 0;
+    width: tovw(924px);
     height: tovw(183px);
-    transform: translateX(-39%);
+    transform: translateX(-35%);
     transform-origin: center bottom;
 
     @media screen and (max-width: 800px) {
-      transform: translateX(-31%);
+      transform: translateX(-25%);
     }
   }
 
@@ -179,7 +176,7 @@
 
   .svg-performs {
     position: relative;
-    width: tovw(415px);
+    width: tovw(1118px);
     height: tovw(115px);
     transform: scaleY(1.016);
     transform-origin: left bottom;
@@ -187,10 +184,10 @@
 
   .svg-that {
     position: relative;
-    width: tovw(1118px);
+    width: tovw(415px);
     height: tovw(115px);
     margin-right: tovw(70px);
-    transform-origin: right bottom;
+    transform-origin: left center;
   }
 }
 
