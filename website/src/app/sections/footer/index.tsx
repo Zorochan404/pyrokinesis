@@ -10,12 +10,14 @@ import s from "./footer.module.scss";
 import Link from "next/link";
 import { DottedDiv } from "../../components/dotted-container";
 import basementTeamSVG from "../../../../public/footer/basement-team.svg";
+import PyroTeamImg from "../../../../public/footer/footerImg.jpg";
+
 import { useMedia } from "../../../hooks/use-media";
 import { toVw } from "../../../lib/utils";
 import { useCallback, useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 
-const ghHref = "https://github.com/basementstudio/scrollytelling";
+const ghHref = "";
 
 export const Footer = () => {
   const isDesktopSm = useMedia("(min-width: 1024px)");
@@ -51,10 +53,11 @@ export const Footer = () => {
         </div>
         <Image
           className={s["footer-heading-text"]}
-          src={basementTeamSVG}
-          alt="basement team"
+          src={basementTeamSVG} 
+          alt="Pyrokinesis team"
         />
         <div className={s.links}>
+          {/* socials */}
           <div>
             <span>social media</span>
             <ul>
@@ -73,7 +76,8 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div>
+          <div> 
+            {/* mid  */}
             <span>get in touch</span>
             <Link
               className="link"
@@ -85,8 +89,8 @@ export const Footer = () => {
             </Link>
           </div>
           <div>
-            <span>@basement.studio llc {new Date().getFullYear()}</span>
-            <span>all rights reserved</span>
+            <span>Pyrokinesis Committee {new Date().getFullYear()}</span>
+            {/* <span>all rights reserved</span> */}
           </div>
         </div>
       </footer>
@@ -136,7 +140,7 @@ const PreFooter = () => {
       />
       <div className={s["left-content"]}>
         <p>
-          Now we are talking! Say hello to our brand new scrollytelling library.
+          What are you waiting for??
         </p>
         <Terminal />
         <a
@@ -145,7 +149,7 @@ const PreFooter = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Check it out on GitHub
+          Book your tickets now!
         </a>
         <a
           className={s["mobile-qr-link"]}
@@ -231,7 +235,7 @@ const Terminal = () => {
           <span className={s["terminal-title"]}>terminal</span>
         </div>
         <DottedDiv className={s.content}>
-          <p ref={contentRef}>yarn add @bsmnt/scrollytelling</p>
+          <p ref={contentRef}>+91 XXXXXXXXXXXXXXXX</p>
           <button
             title="copy text"
             className={s["copy-button"]}
@@ -250,21 +254,21 @@ const Terminal = () => {
 };
 
 const socials = [
-  {
-    name: "twitter",
-    url: "https://twitter.com/basementstudio",
-  },
+  // {
+  //   name: "twitter",
+  //   url: "https://twitter.com/basementstudio",
+  // },
   {
     name: "instagram",
-    url: "https://www.instagram.com/basementdotstudio/",
+    url: "",
   },
+  // {
+  //   name: "github",
+  //   url: "https://github.com/basementstudio",
+  // },
   {
-    name: "github",
-    url: "https://github.com/basementstudio",
-  },
-  {
-    name: "dribbble",
-    url: "https://dribbble.com/basementstudio",
+    name: "AEC",
+    url: "",
   },
 ];
 
