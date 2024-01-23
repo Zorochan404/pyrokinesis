@@ -1,6 +1,7 @@
 @import "./helpers";
 @import "./reset.css";
 
+
 :root {
   --font-system: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen,
     ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
@@ -30,7 +31,9 @@ html {
 
   // tweak if site is light mode.
   color-scheme: dark;
+
   background-color:rgb(0, 0, 0);
+
 }
 
 body {
