@@ -31,6 +31,7 @@ export const Hero = () => {
           scrub: true,
           start: "top+=450px center",
           end: "bottom+=890px 15%",
+
         },
         opacity: 0,
         x: "-=100",
@@ -45,8 +46,8 @@ export const Hero = () => {
           trigger: text.current,
           scrub: true,
           start: "top+=450px center",
-          end: "bottom+=1890px 15%",
-          
+          end: "bottom+=990px 15%",
+
         },
         opacity: 0,
         x: "-=100",
@@ -68,22 +69,26 @@ export const Hero = () => {
 
   const Mystery = () => {
     const text = useRef(null);
+
+
+      useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(text.current, {
+          ease: "power2",
+          scrollTrigger: {
+            trigger: text.current,
+            scrub: true,
+            start: "top+=550px center",
+            end: "bottom+=900px center",
+          },
+          opacity: 0,
+          y: "+=20",
+        });
+      }, []);
+
+
   
-    useLayoutEffect(() => {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(text.current, {
-        ease: "power2",
-        scrollTrigger: {
-          trigger: text.current,
-          scrub: true,
-          start: "top+=550px center",
-          end: "bottom+=1890px center",
-          
-        },
-        opacity: 0,
-        y: "+=20",
-      });
-    }, []);
+   
   
     return (
       <div className={` ${s["svg-coolshit"]}`}> {/* Add multiple classes */}
@@ -113,7 +118,7 @@ export const Hero = () => {
           end: "bottom+=890px 15%",
         },
         opacity: 0,
-        x: "+=100",
+        // x: "+=100",
       });
     }, []);
   }else{useLayoutEffect(() => {
@@ -127,11 +132,11 @@ export const Hero = () => {
           trigger: text.current,
           scrub: true,
           start: "top-=10vh center",
-          end: "bottom+=1990vh center",
+          end: "bottom+=1090vh center",
           
         },
         opacity: 0,
-        x: "+=200",
+        // x: "+=200",
       }
     );
   }, []);
@@ -142,7 +147,7 @@ export const Hero = () => {
     return (
       <div className={`${s["svg-performs"]}`}> {/* Add multiple classes */}
         <h1>Pyrokinesis</h1>
-        <h1 ref={text}>
+        <h1 ref={text} className="year">
           2024
         </h1>
       </div>
