@@ -1,0 +1,55 @@
+/* fonts.css */
+
+/* Import and apply the Google Fonts to your components */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+/* Apply the fonts to your components */
+.pyrokinesis {
+    font-family: 'Kanit', sans-serif; /* Replace 'YourFirstFont' with the actual font name */
+}
+
+.mystery h1 {
+    font-family: 'Kanit', sans-serif;/* Replace 'YourSecondFont' with the actual font name */
+}
+
+/* .pyrokinesis h1.year2024,
+.mystery h1.year2024 {
+  font-family: 'YourThirdFont', sans-serif; /* Replace 'YourThirdFont' with the actual font name */
+
+
+
+
+
+.description{
+    position: relative;
+    color: white;
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin-top: 30vw;
+    margin-left: 10vw;
+}
+.description p {
+    margin: 0px;
+    position: relative;
+}
+
+.description h1 {
+    margin: 0px;
+    position: relative;
+}
+
+.pyrokinesis {
+    display: flex;
+}
+
+.pyrokinesis h1 {
+    padding: 0;
+    margin: 10px;
+}

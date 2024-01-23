@@ -108,21 +108,21 @@
 
 .section {
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   padding-top: tovw(28px, "desktop-large", 24px);
 }
 
 .model-container {
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 60%;
   right: 0;
   width: tovw(500px, "desktop-large", 200px);
   height: tovw(500px, "desktop-large", 200px);
   transform: translateY(-50%);
 
   @media screen and (max-width: 800px) {
-    top: 15%;
+    top: 60%;
   }
 }
 
@@ -130,7 +130,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-  row-gap: tovw(28px, "desktop-large", 16px);
+    row-gap: tovw(28px, "desktop-large", 16px);
+
 
   div:nth-child(3) {
     height: tovw(115px);
@@ -139,8 +140,8 @@
 
 .svg__container {
   position: relative;
-  display: flex;
   align-items: flex-start;
+  text-transform: uppercase;
   width: 100%;
   height: tovw(183px);
 
@@ -148,47 +149,70 @@
     position: absolute;
   }
 
-  .svg-we {
-    top: 0;
-    left: 0;
 
-    width: tovw(543px);
-    height: tovw(183px);
-  }
 
   .svg-make {
+    font-family: "Kanit";
+    display: flex;
+    gap: 3rem;
+    font-size: 9vw;
+    font-weight: 900;
     right: 0;
     bottom: 0;
-    width: tovw(924px);
-    height: tovw(183px);
-    transform: translateX(-35%);
-    transform-origin: center bottom;
 
+       .when{
+        position: relative;
+       }
+    // width: tovw(924px);
+    // height: tovw(183px);
+    // transform: translateX(35%);
+    // transform-origin: center bottom;
     @media screen and (max-width: 800px) {
-      transform: translateX(-25%);
+      gap: 1rem;
+      transform: translateX(-0.4%);
+
     }
+
+
   }
 
-  .svg-coolshit {
-    width: tovw(1856px);
-    height: tovw(257px);
-  }
+    .svg-coolshit {
+      position: relative;
+      top: -35%;
+      font-size: 8vw;
+      font-family: "Press Start 2P";
+      display: flex;
+      gap:3rem;
+
+
+      .mystery{
+        background: #ff4d00;
+      }
+
+
+      @media screen and (max-width: 800px) {
+        gap: 1rem;
+        transform: translateX(-0.4%);
+  
+      }
+    }
+
 
   .svg-performs {
     position: relative;
-    width: tovw(1118px);
-    height: tovw(115px);
-    transform: scaleY(1.016);
-    transform-origin: left bottom;
+    top: -90%;
+    font-size: 10vw;
+    font-family: "Kanit";
+    display: flex;
+    gap:3rem;
+    @media screen and (max-width: 800px) {
+      gap: 1rem;
+      transform: translateX(-0.4%);
+
+    }
+
   }
 
-  .svg-that {
-    position: relative;
-    width: tovw(415px);
-    height: tovw(115px);
-    margin-right: tovw(70px);
-    transform-origin: left center;
-  }
 }
 
 .footer {
@@ -196,12 +220,14 @@
   column-gap: tovw(24px);
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
+  margin-top: tovw(24px, "tablet", 624px);
+  
 
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
 
-    margin-top: tovw(24px, "tablet", 24px);
+    margin-top: tovw(24px, "tablet", 124px);
 
     gap: tovw(24px, "desktop", 24px);
   }
@@ -230,3 +256,4 @@
     }
   }
 }
+

@@ -1,6 +1,7 @@
 @import "./helpers";
 @import "./reset.css";
 
+
 :root {
   --font-system: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen,
     ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
@@ -30,7 +31,7 @@ html {
 
   // tweak if site is light mode.
   color-scheme: dark;
-  background-image: linear-gradient(135deg, transparent 0%, transparent 31%,rgba(65, 2, 169,0.6) 31%, rgba(65, 2, 169,0.6) 62%,transparent 62%, transparent 67%,rgba(140, 61, 182,0.6) 67%, rgba(140, 61, 182,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 1%,rgb(65, 2, 169) 1%, rgb(65, 2, 169) 70%,rgb(103, 32, 176) 70%, rgb(103, 32, 176) 73%,transparent 73%, transparent 100%),linear-gradient(90deg, rgb(152, 10, 191),rgb(12, 5, 47));
+  background-color: rgb(0, 0, 0);
 }
 
 body {
