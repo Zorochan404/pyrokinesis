@@ -10,8 +10,6 @@ import s from "./footer.module.scss";
 import Link from "next/link";
 import { DottedDiv } from "../../components/dotted-container";
 import basementTeamSVG from "../../../../public/footer/basement-team.svg";
-import PyroTeamImg from "../../../../public/footer/footerImg.jpg";
-
 import { useMedia } from "../../../hooks/use-media";
 import { toVw } from "../../../lib/utils";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -51,13 +49,17 @@ export const Footer = () => {
             </Scrollytelling.Animation>
           </div>
         </div>
+
+
+        {/* <div className={s["footer-heading-text"]}>
+          Pyro Team
+          </div> */}
         <Image
           className={s["footer-heading-text"]}
-          src={basementTeamSVG} 
-          alt="Pyrokinesis team"
+          src={basementTeamSVG}
+          alt="basement team"
         />
         <div className={s.links}>
-          {/* socials */}
           <div>
             <span>social media</span>
             <ul>
@@ -76,21 +78,27 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div> 
-            {/* mid  */}
-            <span>get in touch</span>
-            <Link
-              className="link"
-              href="mailto:sayhi@basement.studio"
-              target="_blank"
-              rel="noreferrer"
-            >
-              sayhi@basement.studio
-            </Link>
+          <div>
+            <span>Developed by</span>
+            <ul>
+              {devs.map((dev, idx) => (
+                <li key={idx}>
+                  {idx !== 0 && <span>&nbsp;—&nbsp;</span>}
+                  <Link
+                    className="link"
+                    href={dev.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {dev.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
           <div>
-            <span>Pyrokinesis Committee {new Date().getFullYear()}</span>
-            {/* <span>all rights reserved</span> */}
+            <span>@pyrokinesis {new Date().getFullYear()}</span>
+            {/* <span>all rights reserved </span> */}
           </div>
         </div>
       </footer>
@@ -140,12 +148,12 @@ const PreFooter = () => {
       />
       <div className={s["left-content"]}>
         <p>
-          What are you waiting for??
+        What are you waiting for??
         </p>
         <Terminal />
         <a
           className={clsx(s["gh-link"], "link")}
-          href={ghHref}
+          href={"/sections/registration"}
           target="_blank"
           rel="noreferrer"
         >
@@ -232,10 +240,10 @@ const Terminal = () => {
               <span key={idx} className={s.circle} />
             ))}
           </span>
-          <span className={s["terminal-title"]}>terminal</span>
+          <span className={s["terminal-title"]}>TICKET</span>
         </div>
         <DottedDiv className={s.content}>
-          <p ref={contentRef}>+91 XXXXXXXXXXXXXXXX</p>
+        <p ref={contentRef}>+91 xxxxxxxxxx </p>
           <button
             title="copy text"
             className={s["copy-button"]}
@@ -260,17 +268,28 @@ const socials = [
   // },
   {
     name: "instagram",
-    url: "",
+    url: "https://www.instagram.com/pyrokinesis_aec/",
   },
-  // {
-  //   name: "github",
-  //   url: "https://github.com/basementstudio",
-  // },
   {
-    name: "AEC",
-    url: "",
+    name: "facebook",
+    url: "https://www.facebook.com/pyrokinesis.aec",
   },
 ];
+
+const devs = [
+  {
+    name: "jyotirmoy",
+    url: "",
+  },
+  {
+    name: "tirthankar",
+    url: "",
+  },
+  {
+    name: "chinmoy",
+    url: "",
+  },
+]
 
 const CopiedNotification = ({ className }: { className?: string }) => {
   return (

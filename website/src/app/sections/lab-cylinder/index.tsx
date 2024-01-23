@@ -12,6 +12,10 @@ import culturalnightImg from '../../../../public/images/cylinder_img/culturalnig
 
 const experiments = [
   {
+    "title": "cultural night",
+    "og": culturalnightImg
+  },
+  {
     "title": "cosplay",
     "og": cosplayImg
   },
@@ -27,10 +31,7 @@ const experiments = [
     "title": "constellate",
     "og": constellateImg
   },
-  {
-    "title": "cultural night",
-    "og": culturalnightImg
-  },
+
 
   {
     "title": "stockwarz",
