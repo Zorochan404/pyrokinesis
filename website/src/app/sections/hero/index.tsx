@@ -303,11 +303,7 @@ export const Hero = () => {
               </div>
               <div className={s["footer"]}>
                 <p>
-                  We’re a boutique studio of ambitious creatives working at the
-                  edge of performant and immersive digital experiences, giving
-                  110% to bring projects from a realm of ideas to reality
-                  through branding, visual design & development of the highest
-                  quality.
+                Pyrokinesis, a thrilling celebration that showcases the fervor of tradition and innovation. Pyrokinesis, the annual cultural extravaganza, paints the picture of Assam with charm and mystery. Enchanto Enigma, this year's ethereal theme, weaves a captivating tale of wonders secret. It invites participants into a world where mystery blends with the allure of discovery.
                 </p>
                 <svg
                   viewBox="0 0 24 12"
@@ -320,9 +316,7 @@ export const Hero = () => {
                   />
                 </svg>
                 <p>
-                  We don&apos;t settle, we are intentional about building with
-                  surgical precision and creating extraordinary experiences. We
-                  go the extra mile, and then walk a couple more,
+                Pyrokinesis casts a spellbinding aura. It's a testament to the fusion of tradition and modernity,where the flames of creativity ignite hearts and minds, leaving an indelible mark on all who revel in its enchanting embrace.
                   <br /> just for fun.
                 </p>
                 <p>
